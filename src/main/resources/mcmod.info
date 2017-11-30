@@ -1,0 +1,16 @@
+[
+{
+  "modid": "weeeflowers",
+  "name": "Pam's Weee! Flowers",
+  "description": "Adds a variety of new flowers to Minecraft to allow the gathering of all dyes along with flower crops to grow.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Pamela Collins"],
+  "credits": "Pamela Collins",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

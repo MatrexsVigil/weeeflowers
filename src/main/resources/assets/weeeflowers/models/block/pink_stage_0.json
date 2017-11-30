@@ -1,0 +1,6 @@
+{
+	"parent":"block/crop",
+	"textures": {
+		"crop": "weeeflowers:blocks/pink_stage_0"
+	}
+}

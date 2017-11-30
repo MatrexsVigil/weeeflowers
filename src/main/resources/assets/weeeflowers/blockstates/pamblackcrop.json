@@ -1,0 +1,12 @@
+{
+    "variants": {
+        
+"age=0": { "model": "weeeflowers:black_stage_0" },
+        
+"age=1": { "model": "weeeflowers:black_stage_1" },
+        
+"age=2": { "model": "weeeflowers:black_stage_2" },
+        
+"age=3": { "model": "weeeflowers:black_stage_3" }
+    }
+}

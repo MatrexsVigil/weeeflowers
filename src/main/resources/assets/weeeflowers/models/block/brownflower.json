@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/cross",
+    "textures": {
+        "cross": "weeeflowers:blocks/brownflower"
+    }
+}
