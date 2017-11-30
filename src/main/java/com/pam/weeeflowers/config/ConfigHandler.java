@@ -16,11 +16,13 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ConfigHandler {
 
-    private final Configuration config;
+    
+
+	private final Configuration config;
 
     private static final String CATEGORY_GENERAL = "general";
 
-
+    public static boolean cropsdropSeeds;
     public int seedrarity;
     public int flowerRarity;
    
@@ -46,6 +48,7 @@ public class ConfigHandler {
 
 
     private void initGeneralSettings() {
+    	cropsdropSeeds = config.get(CATEGORY_GENERAL, "cropsdropSeeds", false).getBoolean();
         seedrarity = config.get(CATEGORY_GENERAL, "seedrarity", 1).getInt();
         initSeedDropFromGrassSetting("blackflowerseeddropfromgrass", CropRegistry.BLACK);
         initSeedDropFromGrassSetting("blueflowerseeddropfromgrass", CropRegistry.BLUE);
@@ -63,7 +66,7 @@ public class ConfigHandler {
         initSeedDropFromGrassSetting("redflowerseeddropfromgrass", CropRegistry.RED);
         initSeedDropFromGrassSetting("whiteflowerseeddropfromgrass", CropRegistry.WHITE);
         initSeedDropFromGrassSetting("yellowflowerseeddropfromgrass", CropRegistry.YELLOW);
-        flowerRarity = config.get(CATEGORY_GENERAL, "flowerRarity", 1).getInt();
+        flowerRarity = config.get(CATEGORY_GENERAL, "flowerRarity", 2).getInt();
 
     }
 

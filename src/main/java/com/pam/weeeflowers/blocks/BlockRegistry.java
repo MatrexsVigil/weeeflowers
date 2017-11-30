@@ -22,22 +22,22 @@ public final class BlockRegistry {
 	
 	// Garden blocks
 	public static final HashMap<String, BlockBaseFlower> flowers = new HashMap<String, BlockBaseFlower>();
-	public static final String blackFlower = "blackFlower";
-	public static final String blueFlower = "blueFlower";
-	public static final String brownFlower = "brownFlower";
-	public static final String cyanFlower = "cyanFlower";
-	public static final String darkgrayFlower = "darkgrayFlower";
-	public static final String greenFlower = "greenFlower";
-	public static final String lightblueFlower = "lightblueFlower";
-	public static final String lightgrayFlower = "lightgrayFlower";
-	public static final String limeFlower = "limeFlower";
-	public static final String magentaFlower = "magentaFlower";
-	public static final String orangeFlower = "orangeFlower";
-	public static final String pinkFlower = "pinkFlower";
-	public static final String purpleFlower = "purpleFlower";
-	public static final String redFlower = "redFlower";
-	public static final String whiteFlower = "whiteFlower";
-	public static final String yellowFlower = "yellowFlower";
+	public static final String BLACK = "black";
+	public static final String BLUE = "blue";
+	public static final String BROWN = "brown";
+	public static final String CYAN = "cyan";
+	public static final String DARKGRAY = "darkgray";
+	public static final String GREEN = "green";
+	public static final String LIGHTBLUE = "lightblue";
+	public static final String LIGHTGRAY = "lightgray";
+	public static final String LIME = "lime";
+	public static final String MAGENTA = "magenta";
+	public static final String ORANGE = "orange";
+	public static final String PINK = "pink";
+	public static final String PURPLE = "purple";
+	public static final String RED = "red";
+	public static final String WHITE = "white";
+	public static final String YELLOW = "yellow";
 
 
 	private static boolean initialized = false;
@@ -62,22 +62,22 @@ public final class BlockRegistry {
 	}
 
 	private static void registerFlowers() {
-		addFlower(blackFlower, BlockBaseFlower.Region.PLAINS);
-		addFlower(blueFlower, BlockBaseFlower.Region.PLAINS);
-		addFlower(brownFlower, BlockBaseFlower.Region.PLAINS);
-		addFlower(cyanFlower, BlockBaseFlower.Region.PLAINS);
-		addFlower(darkgrayFlower, BlockBaseFlower.Region.PLAINS);
-		addFlower(greenFlower, BlockBaseFlower.Region.PLAINS);
-		addFlower(lightblueFlower, BlockBaseFlower.Region.PLAINS);
-		addFlower(lightgrayFlower, BlockBaseFlower.Region.PLAINS);
-		addFlower(limeFlower, BlockBaseFlower.Region.PLAINS);
-		addFlower(magentaFlower, BlockBaseFlower.Region.PLAINS);
-		addFlower(orangeFlower, BlockBaseFlower.Region.PLAINS);
-		addFlower(pinkFlower, BlockBaseFlower.Region.PLAINS);
-		addFlower(purpleFlower, BlockBaseFlower.Region.PLAINS);
-		addFlower(redFlower, BlockBaseFlower.Region.PLAINS);
-		addFlower(whiteFlower, BlockBaseFlower.Region.PLAINS);
-		addFlower(yellowFlower, BlockBaseFlower.Region.PLAINS);
+		addFlower(BLACK, BlockBaseFlower.Region.PLAINS);
+		addFlower(BLUE, BlockBaseFlower.Region.PLAINS);
+		addFlower(BROWN, BlockBaseFlower.Region.PLAINS);
+		addFlower(CYAN, BlockBaseFlower.Region.PLAINS);
+		addFlower(DARKGRAY, BlockBaseFlower.Region.PLAINS);
+		addFlower(GREEN, BlockBaseFlower.Region.PLAINS);
+		addFlower(LIGHTBLUE, BlockBaseFlower.Region.PLAINS);
+		addFlower(LIGHTGRAY, BlockBaseFlower.Region.PLAINS);
+		addFlower(LIME, BlockBaseFlower.Region.PLAINS);
+		addFlower(MAGENTA, BlockBaseFlower.Region.PLAINS);
+		addFlower(ORANGE, BlockBaseFlower.Region.PLAINS);
+		addFlower(PINK, BlockBaseFlower.Region.PLAINS);
+		addFlower(PURPLE, BlockBaseFlower.Region.PLAINS);
+		addFlower(RED, BlockBaseFlower.Region.PLAINS);
+		addFlower(WHITE, BlockBaseFlower.Region.PLAINS);
+		addFlower(YELLOW, BlockBaseFlower.Region.PLAINS);
 	}
 
 

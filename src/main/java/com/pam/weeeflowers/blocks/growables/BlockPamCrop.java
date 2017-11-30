@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Random;
 
 import com.pam.weeeflowers.blocks.BlockRegistry;
-import com.pam.weeeflowers.blocks.CropRegistry;
+import com.pam.weeeflowers.config.ConfigHandler;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockCrops;
@@ -13,7 +13,6 @@ import net.minecraft.block.properties.PropertyInteger;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Blocks;
-import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.AxisAlignedBB;
@@ -25,7 +24,6 @@ import net.minecraftforge.common.EnumPlantType;
 import net.minecraftforge.common.IPlantable;
 import net.minecraftforge.event.ForgeEventFactory;
 import net.minecraftforge.fml.common.FMLLog;
-import net.minecraftforge.fml.common.registry.ForgeRegistries;
 
 public class BlockPamCrop extends BlockCrops implements IGrowable, IPlantable, PamCropGrowable {
 
@@ -48,15 +46,15 @@ public class BlockPamCrop extends BlockCrops implements IGrowable, IPlantable, P
 	private String BASE_STAGE_ID = null;
 
 	private Item seed;
-	//private Item food;
+	private Item food;
 
 	public void setSeed(Item seed) {
 		this.seed = seed;
 	}
 
-	//public void setFood(Item food) {
-	//	this.food = food;
-	//}
+	public void setFood(Item food) {
+		this.food = food;
+	}
 
 	public BlockPamCrop(String registerName, String name) {
 		super();
@@ -126,10 +124,7 @@ public class BlockPamCrop extends BlockCrops implements IGrowable, IPlantable, P
 
 	@Override
     public Item getCrop() {
-        if(CropRegistry.CROP_BLOCK_NAME.equals("black")) {
-			return Item.getItemFromBlock(BlockRegistry.getFlower("blackFlower"));
-		} else
-		return Items.WHEAT;
+		return Item.getItemFromBlock(BlockRegistry.flowers.get(name));
     }
 
 	@Override
@@ -252,7 +247,11 @@ public class BlockPamCrop extends BlockCrops implements IGrowable, IPlantable, P
 		if(age >= getMatureAge()) {
 			for(int i = 0; i < 3 + fortune; ++i) {
 				if(rand.nextInt(2 * getMatureAge()) <= age) {
-					ret.add(new ItemStack(getSeed(), 1, 0));
+					if (ConfigHandler.cropsdropSeeds)
+					{
+						ret.add(new ItemStack(getSeed(), 1, 0));
+					}
+					ret.add(new ItemStack(getCrop(), 1, 0));
 				}
 			}
 		}

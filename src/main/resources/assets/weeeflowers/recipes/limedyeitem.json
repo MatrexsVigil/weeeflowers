@@ -1,0 +1,14 @@
+{
+  "result": {
+    "item": "minecraft:dye",
+    "data": 10,
+    "count": 1
+  },
+  "group": "weeeflowers",
+  "ingredients": [
+    {
+      "item": "weeeflowers:limeflower"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless"
+}

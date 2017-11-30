@@ -1,0 +1,19 @@
+Weee! Flowers 1.12.2a
+-----------------
+- Added: Sixteen flowers that spawn in clusters across the world, can be combined in the crafting grid to get dyes (1:1) or seeds (2:2)
+- Added: Config: flowerRarity [Default: 2]: Higher is more flowers, set to 0 to stop flowers from spawning
+- Added: Block: Sixteen crops to grow those flowers for farming
+- Added: Items: Sixteen flower crop seeds
+- Added: Config: cropsdropSeeds [Default: false]: Use this to toggle the flower crops dropping 2-4 flowers or 1 flower, 1-3 seeds
+- Added: Config: COLORflowerseeddropfromgrass [Default: false]: Use this to toggle flower crop seeds dropping from tall grass
+- Added: Config: seedrarity [Default: 1]: Higher is more chance to drop from tall grass as opposed to other seeds
+- Added: Items: Four new dyes (black, blue, brown, white) for flower to dye recipes for balance reasons, all four dyes are listed correctly under the OreDictionary for recipes
+
+TODO LIST
+- Bonemeal grass to get flowers
+- Flower bush blocks for deco (block, slab, stairs, etc)
+- Flower vine deco blocks
+- Flower cover 'carpet' deco blocks
+- Nether flowers
+
+

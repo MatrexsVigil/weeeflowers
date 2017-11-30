@@ -71,7 +71,7 @@ public class BlockBaseFlower extends BlockBush {
         this.setSoundType(SoundType.PLANT);
         this.setTickRandomly(true);
 
-        BlockRegistry.registerBlock(name, this);
+        BlockRegistry.registerBlock(name + "flower", this);
     }
 
     

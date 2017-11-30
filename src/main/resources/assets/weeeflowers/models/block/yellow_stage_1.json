@@ -1,6 +1,6 @@
 {
 	"parent":"block/crop",
 	"textures": {
-		"crop": "weeeflowers:blocks/color_stage_1"
+		"crop": "weeeflowers:blocks/yellow_stage_1"
 	}
 }

@@ -1,0 +1,16 @@
+{
+  "result": {
+    "item": "weeeflowers:brownseeditem",
+    "count": 2
+  },
+  "group": "weeeflowers",
+  "ingredients": [
+    {
+      "item": "weeeflowers:brownflower"
+    },
+    {
+      "item": "weeeflowers:brownflower"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless"
+}
