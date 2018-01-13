@@ -1,0 +1,16 @@
+{
+  "result": {
+    "item": "minecraft:leather",
+    "count": 1
+  },
+  "group": "weeeflowers",
+  "ingredients": [
+    {
+      "item": "pigskin:pigskinitem"
+    },
+    {
+      "item": "pigskin:pigskinitem"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless"
+}

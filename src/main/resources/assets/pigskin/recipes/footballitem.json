@@ -1,0 +1,17 @@
+{
+  "result": {
+    "item": "pigskin:footballitem",
+    "count": 1
+  },
+  "group": "weeeflowers",
+  "ingredients": [
+    {
+      "item": "pigskin:pigskinitem"
+    },
+    {
+      "type": "forge:ore_dict",
+      "ore": "string"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless"
+}
